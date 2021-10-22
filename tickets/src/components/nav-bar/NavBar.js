@@ -1,10 +1,14 @@
 import { Container, Nav, Navbar, NavDropdown, Form, FormControl,Button } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTicketAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 const NavBar = ()=>{
     return (
-        <Navbar bg="dark" variant= "dark" expand="lg">
+        <Navbar bg="lg" variant= "lg"expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+         
+          <FontAwesomeIcon icon={faTicketAlt} />
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
